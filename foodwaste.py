@@ -86,10 +86,10 @@ def main():
         st.write(f"The predicted package selection is: {prediction}")
         
         if prediction == "Package A":
-            image = Image.open("package_A.png")  # Adjust the path as needed
+            image = Image.open("package_A.PNG")  # Adjust the path as needed
             st.image(image, caption='Package A')
         elif prediction == "Package B":
-            image = Image.open("package_B.png")  # Adjust the path as needed
+            image = Image.open("package_B.PNG")  # Adjust the path as needed
             st.image(image, caption='Package B')
 
 if __name__ == "__main__":
