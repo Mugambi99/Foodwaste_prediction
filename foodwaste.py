@@ -47,7 +47,7 @@ def main():
     """)
 
     # Image banner (replace 'path/to/banner.jpg' with the actual file path)
-    banner = Image.open('LVAP.PNG')
+    banner = Image.open('LVAP.png')
     st.image(banner)
 
     # User Inputs
