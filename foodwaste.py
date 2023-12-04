@@ -41,13 +41,13 @@ def predict_package_selection(input_data):
     return "Package A" if prediction[0] == 0 else "Package B"
 
 def main():
-    st.title("Food Waste Prediction Web App")
+    st.title("🍏 Food Waste Prediction Web App 🌿")
     st.write("""
         The experiment aimed to capture the effect of sharing information about less visually appealing produce (LVAP) on the actual behavior of consumers, namely their selection of produce at the end of the experiment. Essentially, the app is able to run on already existing data, trying to make predictions of the selection based on knowledge and attitude perception. It can predict their selection of the package.
     """)
 
     # User Inputs
-    st.write("### Demographic Question")
+    st.write("### Demographic Questions")
     gender = st.radio("What is your Gender?", ('Male', 'Female'))
     age = st.selectbox("What is your age?", ['18-25', '26-35', '36-45', '46-55', '56-65', 'Older than 65'])
     education = st.selectbox("Highest level of education completed", ['No formal education', 'Completed Primary Education', 'Completed Secondary Education', 'Completed Community College', 'Completed Undergraduate', 'Completed Postgraduate'])
