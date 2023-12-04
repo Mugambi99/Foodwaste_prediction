@@ -46,7 +46,7 @@ def main():
         Our experiment was designed to investigate how sharing information about Less Visually Appealing Produce (LVAP) influences consumer behavior, specifically focusing on their produce selection choices. This app, leveraging existing data, harnesses the power of predictive analytics to forecast consumer selections. It intelligently analyzes patterns in knowledge and attitudes towards LVAP to anticipate the preferred type of produce. Our goal is to offer insights into consumer preferences, enabling more informed decisions in the realm of food sustainability.
     """)
 
-    # Image banner (replace 'path/to/banner.jpg' with the actual file path)
+    # Image banner 
     banner = Image.open('LVAP.png')
     st.image(banner)
 
@@ -60,7 +60,7 @@ def main():
     size_household = st.number_input("Including yourself, how many people have you lived with in your household in the past 6 months?", min_value=1, max_value=20)
 
     # LVAP Knowledge Questions
-    st.write("### Level of Knowledge about LVAP")
+    st.write("### Evaluate Your Understanding of Less Visually Appealing Produce")
     lvap_knowledge_responses = {
         "Fruits and vegetables that are smelly and slimy are still safe to consume": st.selectbox("Fruits and vegetables that are smelly and slimy are still safe to consume:", ['Strongly disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly agree']),
         "Less visually appealing produce has the same nutritional value as good looking produce": st.selectbox("Less visually appealing produce has the same nutritional value as good looking produce:", ['Strongly disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly agree']),
@@ -72,7 +72,7 @@ def main():
     }
 
     # LVAP Attitude Questions
-    st.write("### What is your attitude towards LVAP?")
+    st.write("### Attitudes Toward Less Visually Appealing Produce")
     lvap_attitude_responses = {
         "Unsold less visually appealing produce contributes to food waste in the markets": st.selectbox("Unsold less visually appealing produce contributes to food waste in the markets:", ['Strongly disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly agree']),
         "I believe less visually appealing produce is just as valuable to my health": st.selectbox("I believe less visually appealing produce is just as valuable to my health:", ['Strongly disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly agree']),
