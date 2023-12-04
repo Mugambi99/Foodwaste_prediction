@@ -43,7 +43,7 @@ def predict_package_selection(input_data):
 def main():
     st.title("🍏 Food Waste Prediction Web App 🌿")
     st.write("""
-        The experiment aimed to capture the effect of sharing information about less visually appealing produce (LVAP) on the actual behavior of consumers, namely their selection of produce at the end of the experiment. Essentially, the app is able to run on already existing data, trying to make predictions of the selection based on knowledge and attitude perception. It can predict their selection of the package.
+        Our experiment was designed to investigate how sharing information about Less Visually Appealing Produce (LVAP) influences consumer behavior, specifically focusing on their produce selection choices. This app, leveraging existing data, harnesses the power of predictive analytics to forecast consumer selections. It intelligently analyzes patterns in knowledge and attitudes towards LVAP to anticipate the preferred type of produce. Our goal is to offer insights into consumer preferences, enabling more informed decisions in the realm of food sustainability.
     """)
 
     # Image banner (replace 'path/to/banner.jpg' with the actual file path)
