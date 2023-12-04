@@ -46,6 +46,10 @@ def main():
         The experiment aimed to capture the effect of sharing information about less visually appealing produce (LVAP) on the actual behavior of consumers, namely their selection of produce at the end of the experiment. Essentially, the app is able to run on already existing data, trying to make predictions of the selection based on knowledge and attitude perception. It can predict their selection of the package.
     """)
 
+    # Image banner (replace 'path/to/banner.jpg' with the actual file path)
+    banner = Image.open('LVAP.PNG')
+    st.image(banner)
+
     # User Inputs
     st.write("### Demographic Questions")
     gender = st.radio("What is your Gender?", ('Male', 'Female'))
